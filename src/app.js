@@ -29,8 +29,8 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     // Render retrieves the view and renders it as html.
     res.render('index', {
-        title: 'HBS app',
-        name: 'JiaoWei'
+        title: 'Four Seasons Weather App',
+        name: 'Brian Chen'
     })
 })
 
@@ -38,7 +38,7 @@ app.get('/about', (req, res) => {
     // Render retrieves the view and renders it as html.
     res.render('about', {
         title: 'About',
-        name: 'JiaoZaiWei'
+        name: 'Brian Chen'
     })
 })
 
