@@ -9,6 +9,7 @@ console.log(path.join(__dirname, '../public'))
 
 // Set up app as a webserver.
 const app = express()
+const port = process.env.PORT || 3000
 
 // Define paths for Express configuration.
 // Point to the public directory containing all of the static pages.
@@ -110,6 +111,6 @@ app.get('*', (req, res) => {
 })
 
 // Start the server up.
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.') // Will not appear on the browser end, will only appear in the dev console.
+app.listen(port, () => {
+    console.log('Server is up on port', port) // Will not appear on the browser end, will only appear in the dev console.
 })
